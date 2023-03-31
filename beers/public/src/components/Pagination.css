@@ -1,0 +1,29 @@
+.paginationBeers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginationBeers button{
+  width: 45px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.4s ease;
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.paginationBeers button.active{
+  font-weight: 800;
+  background-color: rgb(82, 188, 230);
+  border-color: rgb(82, 188, 230);
+  color: black;
+}

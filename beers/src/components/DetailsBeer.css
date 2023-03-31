@@ -1,0 +1,161 @@
+.beerDetails{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+h4{
+  font-style: italic;
+}
+
+.card{
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 16px 32px;
+  transition: all 0.3s ease;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.beerImageLarge{
+  width: 100px;
+  height: 100px;
+}
+
+.beerImageSmall img{
+  max-width:100%;
+  height:auto;
+  object-fit: cover;
+}
+
+.beerImageSmall{
+  width: 200px;
+  height: 200px;
+}
+
+.beerImageLarge img{
+  max-width:100%;
+  height:auto;
+  object-fit: cover;
+}
+
+.descriptionBeer{
+  width: 100%;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.beerInformation::-webkit-scrollbar {
+  display: none;
+}
+
+.backButton{
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.beerInformation {
+  margin: 0 0px;
+  padding: 0 32px;
+  width: 450px;
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+  .card{
+    margin: 50px 20px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .beerImageLarge{
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
+
+  .beerImageSmall{
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
+  }
+
+  .beerInformation{
+    margin: 50px 20px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 1100px;
+    font-size: 12px;
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .card{
+    margin: 50px 20px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .beerImageLarge{
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
+
+  .beerImageSmall{
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
+  }
+  
+  .beerInformation{
+    margin: 50px 20px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 1100px;
+    font-size: 12px;
+  }
+}
+
